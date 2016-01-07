@@ -1,0 +1,10 @@
+﻿@model LabViews.ViewModels.ListCarViewModel
+
+@if (Model.ShowAsFast == true)
+{
+    <h3 style="color:blue;"> @Model.Brand </h3>
+}
+else
+{
+    @Model.Brand
+}

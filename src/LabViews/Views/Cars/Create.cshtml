@@ -1,0 +1,28 @@
+﻿@model LabViews.ViewModels.CreateCarViewModel
+<h1>Cars/Create</h1>
+
+<form asp-controller="Cars" asp-action="Create">
+
+    <label asp-for="Brand"></label>
+    <input asp-for="Brand" />
+    <span asp-validation-for="Brand"></span>
+    <br />
+
+    <label asp-for="Doors"></label>
+    <input asp-for="Doors" />
+    <span asp-validation-for="Doors"></span>
+    <br />
+
+    <label asp-for="TopSpeed"></label>
+    <input asp-for="TopSpeed" />
+    <span asp-validation-for="TopSpeed"></span>
+    <br />
+
+    <label asp-for="AcceptTerms"></label>
+    <input asp-for="AcceptTerms" />
+    <span asp-validation-for="AcceptTerms"></span>
+    <br />
+
+    <input type="submit" value="Create" />
+</form>
+
